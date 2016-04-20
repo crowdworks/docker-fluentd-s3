@@ -1,6 +1,7 @@
 FROM fluent/fluentd
 
 RUN fluent-gem install -q fluent-plugin-forest && \
+    fluent-gem install -q fluent-plugin-rewrite && \
     fluent-gem install -q fluent-plugin-s3
 
 USER root
